@@ -57,10 +57,7 @@ class I_IntroViewController: UIViewController {
     
     func goNextView() {
         println("goNextView")
-//        let navigationController = storyboard.instantiateViewControllerWithIdentifier(MainStoryboard.ViewControllerIdentifiers.selectLevelViewController) as UINavigationController
-//        
-//        showDetailViewController(navigationController, sender: self)
-        
+
         let nextViewController = self.storyboard.instantiateViewControllerWithIdentifier("selectLevelViewController") as I_SelectLevelViewController
         
         self.navigationController.pushViewController(nextViewController, animated: true)
@@ -71,7 +68,7 @@ class I_IntroViewController: UIViewController {
 //        
         self.spinner.startAnimating()
         println("checkStatus")
-        for i in 1...50000{
+        for i in 1...10{
            println(i)
         }
         self.spinner.stopAnimating()

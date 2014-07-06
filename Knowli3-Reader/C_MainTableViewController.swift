@@ -9,12 +9,6 @@
 import UIKit
 
 class C_MainTableViewController: UITableViewController {
-
-    init(style: UITableViewStyle) {
-        super.init(style: style)
-        // Custom initialization
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +17,9 @@ class C_MainTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.leftBarButtonItem=nil;
+        self.navigationItem.hidesBackButton = true
+        self.navigationItem.setHidesBackButton(true, animated: false)
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,24 +32,35 @@ class C_MainTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView?) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return 5
     }
 
-    /*
+
     override func tableView(tableView: UITableView?, cellForRowAtIndexPath indexPath: NSIndexPath?) -> UITableViewCell? {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+//        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
+        var cell:C_MainTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as C_MainTableViewCell
+        
+//        cell.textLabel.text = "Hello World"
+        
+        //var title: UILabel = cell.viewWithTag(101)
+        //var content: UILabel = cell.viewWithTag(102)
+        //let image = UIImage(named: "checkbox-checked") as UIImage
+        //cell.imageView.image = image
+        //cell.textLabel.text = "TEST"
+        let image = UIImage(named: "checkbox-checked") as UIImage
+        cell.contentImageView.image = image
+        cell.titleLabel.text = "title"
+        cell.contentLabel.text = "content"
+        
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
