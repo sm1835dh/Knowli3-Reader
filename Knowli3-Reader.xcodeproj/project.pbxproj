@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6C206B791969835100A60283 /* C_MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C206B781969835100A60283 /* C_MainTableViewCell.swift */; };
+		6CC20BDB196D7816000DFE82 /* C_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC20BDA196D7816000DFE82 /* C_Data.swift */; };
+		6CC20BDD196D81D4000DFE82 /* NetworkConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC20BDC196D81D4000DFE82 /* NetworkConnector.swift */; };
 		6CCF7C181967A49700819669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF7C171967A49700819669 /* AppDelegate.swift */; };
 		6CCF7C1A1967A49700819669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF7C191967A49700819669 /* ViewController.swift */; };
 		6CCF7C1D1967A49700819669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF7C1B1967A49700819669 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 
 /* Begin PBXFileReference section */
 		6C206B781969835100A60283 /* C_MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C_MainTableViewCell.swift; sourceTree = "<group>"; };
+		6CC20BDA196D7816000DFE82 /* C_Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C_Data.swift; sourceTree = "<group>"; };
+		6CC20BDC196D81D4000DFE82 /* NetworkConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnector.swift; sourceTree = "<group>"; };
 		6CCF7C121967A49700819669 /* Knowli3-Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Knowli3-Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCF7C161967A49700819669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CCF7C171967A49700819669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 		6CCF7C401967E17A00819669 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6CC20BDA196D7816000DFE82 /* C_Data.swift */,
+				6CC20BDC196D81D4000DFE82 /* NetworkConnector.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -271,11 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CC20BDB196D7816000DFE82 /* C_Data.swift in Sources */,
 				6CCF7C3D1967AC1F00819669 /* C_DetailViewController.swift in Sources */,
 				6CCF7C351967ABA900819669 /* I-IntroViewController.swift in Sources */,
 				6CCF7C371967ABBF00819669 /* I_SelectLevelViewController.swift in Sources */,
 				6CCF7C391967ABD500819669 /* I_SelectPreferenceViewController.swift in Sources */,
 				6CCF7C1A1967A49700819669 /* ViewController.swift in Sources */,
+				6CC20BDD196D81D4000DFE82 /* NetworkConnector.swift in Sources */,
 				6CCF7C3B1967ABFD00819669 /* C_MainTableViewController.swift in Sources */,
 				6C206B791969835100A60283 /* C_MainTableViewCell.swift in Sources */,
 				6CCF7C181967A49700819669 /* AppDelegate.swift in Sources */,
